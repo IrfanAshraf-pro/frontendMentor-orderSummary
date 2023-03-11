@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+           PaleBlue:'#e0e8ff',
+           BrightBlue:'	#3829e0',
+           VeryPaleBlue:'#f5f7ff',
+           DesaturatedBlue:'#7280a7',
+           darkBlue:'	#1f2f56'
+          },
+          fontFamily:{
+            'RedHat':['Red Hat Display', 'sans-serif']
+          },
+          backgroundImage:{
+            'mobilePattern':"url('./images/pattern-background-mobile.svg')",
+            'desktopPattern':"url('./images/pattern-background-desktop.svg')"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-RedHat">
+
+  <div class="min-h-screen flex items-center justify-center bg-mobilePattern sm:bg-desktopPattern bg-no-repeat ">
+    <div class="w-11/12 max-w-[300px] bg-white rounded-xl shadow-lg flex flex-col">
+        <div class="">
+          <img src="./images/illustration-hero.svg" alt="hero bg" class="w-full rounded-t-xl">
+        </div>
+        <h1 class="text-darkBlue my-6 font-black text-xl text-center">Order Summary</h1>
+        <p class="text-center text-DesaturatedBlue text-base px-8">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like! </p>
+        <div class="bg-VeryPaleBlue w-[90%] mx-auto rounded-xl flex my-6 justify-between px-3 items-center py-3">
+          <img src="./images/icon-music.svg" alt="">
+          <div class="">
+            <p class="font-black text-xs text-darkBlue">Annual Plan</p>
+            <p class="text-xs text-DesaturatedBlue">$59.99/year</p>
+          </div>
+          <p class="underline text-BrightBlue text-xs cursor-pointer font-black hover:no-underline hover:text-BrightBlue/75">Change</p>
+        </div>
+        <button class="font-black bg-BrightBlue text-center py-4 rounded-lg text-white text-xs tracking-2 cursor-pointer drop-shadow-2xl drop-shadow-darkBlue w-10/12 mx-auto hover:bg-BrightBlue/50">Proceed to Payment</button>
+        <p class="text-DesaturatedBlue cursor-pointer text-center font-medium text-base my-6 hover:text-darkBlue">cancel order</p>
+    </div>
+
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
